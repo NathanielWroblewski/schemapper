@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Schemapper::VERSION
   spec.authors       = ["Nathaniel Wroblewski"]
   spec.email         = ["nathanielwroblewski@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Visualize your Rails schema}
+  spec.summary       = %q{Database agnostic visualization of your Rails schema}
+  spec.homepage      = "https://github.com/NathanielWroblewski/schemapper"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
