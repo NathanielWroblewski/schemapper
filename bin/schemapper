@@ -7,8 +7,9 @@ serialized_schema = `ruby #{File.dirname(__FILE__)}/../lib/schemapper.rb`
 schema = YAML.load(serialized_schema)
 
 html_path = File.expand_path('../../lib/schemapper/schemapper.html', __FILE__)
-html_source = File.read(html_path) + '<script>window._schemapper = ' +
-  "#{schema.to_json};visualizeSchema()</script>"
+d3_path = File.expand_path('../../lib/schemapper/d3.v3.min.js', __FILE__)
+html_source = File.read(html_path) + '<script>' + File.read(d3_path) +
+  "window._schemapper=#{schema.to_json};visualizeSchema()</script>"
 temp_html = '/tmp/schemapper.html'
 
 File.open(temp_html, 'w'){ |file| file.write(html_source) }
