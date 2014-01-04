@@ -1,24 +1,22 @@
 # Schemapper
 
-TODO: Write a gem description
+Schemapper is a database-agnostic tool to visualize [Rails](http://rubyonrails.org/) 3.0+ schemas using [D3](http://d3js.org/).
+Schemapper does this by walking your models directly to obtain their associations, table names, and attributes.
+
+## Screen Shot
+![Screen Shot](https://raw.github.com/NathanielWroblewski/schemapper/master/screen_shot.png)
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'schemapper'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+No need to add schemapper to your Gemfile.  Instead, just install it:
 
     $ gem install schemapper
 
 ## Usage
 
-TODO: Write usage instructions here
+After installing it, just run the following command from the root of your Rails app:
+
+    $ schemapper
 
 ## Contributing
 
